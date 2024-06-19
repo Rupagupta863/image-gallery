@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+html{ font-size: 62.5%;}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  font-family: fangsong;
+  text-shadow: 0.1rem 0.2rem 0.4rem rgb(124, 123, 123);
+}
+.box{ 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: center;
+  gap: 5rem;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+.maindiv{ 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  height: 40rem;
+  width: 28rem;
+  margin-block: 3rem;
+  box-shadow: 1.4rem 1.4rem 2rem #cbced1, -1.4rem -1.4rem 2rem white;
+}
+.maindiv .fdiv .sdiv img{
+  height: 27rem;
+  width: 22rem;
+  border-radius: 0.5rem;
+}
+.maindiv .fdiv .sdiv{
+  text-align: center;
+}
+
+.tdiv button{
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.8rem;
+  transition: 0.2s;
+  color: black;
+  background: #ecf0f3;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0.6rem 0.6rem 0.8rem #cbced1, -0.6rem -0.6rem 0.8rem white;
+}
+button:hover{
+  font-size: 0.9rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem #cbced1, -0.2rem -0.2rem 0.4rem white;
+}
+
+.maindiv .tdiv{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: fangsong;
+  text-shadow: 0.08rem 0.1rem 0.2rem rgb(124, 123, 123);
+}
+.tdiv span{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.sel{
+  background: #ecf0f3;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 5rem;
+  width: 10rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.6rem 0.6rem 0.8rem #cbced1, -0.6rem -0.6rem 0.8rem white;
+}
+.sel:hover{
+  box-shadow: 0.2rem 0.2rem 0.4rem #cbced1, -0.2rem -0.2rem 0.4rem white;
+}
+
+
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.label-text {
+  margin: 1.6rem;
+  font-weight: bolder;
+  font-family: fangsong;
+  text-shadow: 0.08rem 0.1rem 0.2rem rgb(124, 123, 123);
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow:
+    -0.8rem -0.4rem 0.8rem 0rem #ffffff,
+    0.8rem 0.4rem 12rem 0rem #d1d9e6,
+    0.4rem 0.4rem 0.4rem 0rem #d1d9e6 inset,
+    -0.4rem -0.4rem 0.4rem 0rem #ffffff inset;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #ecf0f3;
+  border-radius: 1.5rem;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow:
+    -0.8rem -0.4rem 0.8rem 0rem #ffffff,
+    0.8rem 0.4rem 1.2rem 0rem #d1d9e6;
+}
+
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+}
